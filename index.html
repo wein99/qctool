@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丹尼玩具</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to top, #000000 0%, #ffffff 70%);
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            padding-top: 40px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            font-family: 'font-box yahei', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 50px;
+            color: #000000;
+            letter-spacing: 2px;
+        }
+
+        .description {
+            margin: 20px 0;
+            padding: 20px 30px;
+            background-color: transparent;
+            text-align: left;
+            line-height: 2;
+            color: #000;
+        }
+
+        .ipqc-title {
+            font-family: 'Times New Roman', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #000;
+        }
+
+        .ipqc-subtitle {
+            font-family: 'Times New Roman', sans-serif;
+            font-size: 15px;
+            font-style: italic;
+            margin-bottom: 25px;
+            color: #000;
+        }
+
+        .description-text {
+            font-family: 'font-box yahei', sans-serif;
+            font-size: 10px;
+            line-height: 1.8;
+            text-align: justify;
+            color: #000;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: auto;
+            margin-bottom: 80px;
+            width: 100%;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn-primary {
+            background-color: #ffffff;
+            color: #000000;
+            border: 2px solid #000000;
+        }
+
+        .btn-secondary {
+            background-color: #000000;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+
+        .btn-tertiary {
+            background-color: #808080;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+            font-family: 'Times New Roman', sans-serif;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">丹尼玩具</div>
+        
+        <div class="description">
+            <div class="ipqc-title">IPQC (过程质量控制)</div>
+            <div class="ipqc-subtitle">In-Process Quality Control</div>
+            <div class="description-text">
+                责职责包括：对生产线进行巡检，监督工艺参数、操作规范及设备状态的符合性；执行首件检验、抽样检测，确保原材料、半成品符合质量标准；及时发现并反馈异常，跟踪纠正措施，防止不合格品流入下道工序；记录质量数据，协助分析不良原因，协同生产部门优化流程，保障产品良率及客户要求。核心目标是实现过程稳定，预防质量风险。
+            </div>
+        </div>
+
+        <div class="button-group">
+            <a href="https://www.kdocs.cn/wo/sl/v12JnqCR" class="btn btn-primary" target="_blank" id="patrol">巡检异常添加</a>
+            <a href="https://www.kdocs.cn/wo/sl/v1431bmb" class="btn btn-secondary" target="_blank" id="handle">查询处理</a>
+            <a href="https://www.kdocs.cn/wo/sl/v11kf6zX" class="btn btn-tertiary" target="_blank" id="record">异常汇总表</a>
+        </div>
+        <div class="footer">QA</div>
+    </div>
+</body>
+</html>
